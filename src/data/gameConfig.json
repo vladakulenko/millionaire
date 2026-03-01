@@ -1,0 +1,71 @@
+{
+    "prizeLadder": [
+        { "level": 1, "amount": 500 },
+        { "level": 2, "amount": 1000 },
+        { "level": 3, "amount": 2000 },
+        { "level": 4, "amount": 4000 },
+        { "level": 5, "amount": 8000 }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "level": 1,
+            "question": "What does HTML stand for?",
+            "answers": [
+                { "id": "A", "text": "Hyper Trainer Marking Language" },
+                { "id": "B", "text": "Hyper Text Markup Language" },
+                { "id": "C", "text": "High Text Markup Language" },
+                { "id": "D", "text": "Hyper Text Markdown Language" }
+            ],
+            "correctAnswers": ["B"]
+        },
+        {
+            "id": 2,
+            "level": 2,
+            "question": "Which planet is known as the Red Planet?",
+            "answers": [
+                { "id": "A", "text": "Earth" },
+                { "id": "B", "text": "Mars" },
+                { "id": "C", "text": "Jupiter" },
+                { "id": "D", "text": "Venus" }
+            ],
+            "correctAnswers": ["B"]
+        },
+        {
+            "id": 3,
+            "level": 3,
+            "question": "Which company developed the React library?",
+            "answers": [
+                { "id": "A", "text": "Google" },
+                { "id": "B", "text": "Microsoft" },
+                { "id": "C", "text": "Facebook" },
+                { "id": "D", "text": "Amazon" }
+            ],
+            "correctAnswers": ["C"]
+        },
+        {
+            "id": 4,
+            "level": 4,
+            "question": "What is the capital of France?",
+            "answers": [
+                { "id": "A", "text": "Berlin" },
+                { "id": "B", "text": "Madrid" },
+                { "id": "C", "text": "Rome" },
+                { "id": "D", "text": "Paris" }
+            ],
+            "correctAnswers": ["D"]
+        },
+        {
+            "id": 5,
+            "level": 5,
+            "question": "Which data structure uses FIFO (First In, First Out)?",
+            "answers": [
+                { "id": "A", "text": "Stack" },
+                { "id": "B", "text": "Queue" },
+                { "id": "C", "text": "Tree" },
+                { "id": "D", "text": "Graph" }
+            ],
+            "correctAnswers": ["B"]
+        }
+    ]
+}

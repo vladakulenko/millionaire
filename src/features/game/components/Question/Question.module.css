@@ -1,0 +1,21 @@
+.question {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 116%;
+    letter-spacing: 0%;
+    padding: 0 16px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .question {
+        font-size: 32px;
+        padding-top: 130px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,24 @@
+.button {
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 14px;
+    background-color: #ff8b37;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: #e87928;
+}
+
+@media (min-width: 768px) {
+    .button {
+        max-width: 296px;
+    }
+
+    .button:hover {
+        background-color: #ffac70;
+    }
+}

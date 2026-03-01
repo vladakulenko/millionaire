@@ -1,0 +1,124 @@
+.answers {
+    width: 100%;
+    padding: 0;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+
+    padding: 0;
+    margin-bottom: 12px;
+    border: none;
+    background-color: transparent;
+}
+
+.answerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    width: calc(100% - 32px);
+    min-height: 56px;
+    background: white;
+    border: 1px solid #d0d0d0;
+
+    clip-path: polygon(
+        20px 0%,
+        calc(100% - 20px) 0%,
+        100% 50%,
+        calc(100% - 20px) 100%,
+        20px 100%,
+        0% 50%
+    );
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.answer::before,
+.answer::after {
+    content: '';
+    position: absolute;
+    top: 49%;
+    width: 16px;
+    height: 1px;
+    background-color: #d0d0d0;
+    z-index: -1;
+}
+
+.answer::before {
+    left: 0;
+}
+.answer::after {
+    right: 0;
+}
+
+.answer.current .answerText {
+    color: #ff8c31;
+    border-color: #ff8c31;
+}
+
+.answer.current::before,
+.answer.current::after {
+    background-color: #ff8c31;
+}
+
+.answer.selected .answerText {
+    border-color: #ff8b37;
+    background-color: #fff3eb;
+}
+
+.answer.selected::before,
+.answer.selected::after {
+    background-color: #ff8c31;
+}
+
+.answer.correct .answerText {
+    border-color: #47d867;
+    background-color: #e6faea;
+}
+
+.answer.correct::before,
+.answer.correct::after {
+    background-color: #47d867;
+}
+
+.answer.wrong .answerText {
+    border-color: #ec6259;
+    background-color: #fdeeed;
+}
+
+.answer.wrong::before,
+.answer.wrong::after {
+    background-color: #ec6259;
+}
+
+@media (min-width: 768px) {
+    .answers {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        padding: 0;
+        margin-bottom: 80px;
+    }
+
+    .answer {
+        max-width: 421px;
+        margin-bottom: 0;
+    }
+
+    .answer:hover .answerText {
+        border-color: #ff8b37;
+        background-color: #ffffff;
+    }
+
+    .answer:hover::before,
+    .answer:hover::after {
+        background-color: #ff8b37;
+    }
+}
