@@ -29,7 +29,7 @@ const PrizeLadder = ({
                                 className={`${styles.prizeItem} ${isCurrent ? styles.current : ''} ${isPassed ? styles.disabled : ''}`}
                             >
                                 <span className={styles.prizeAmount}>
-                                    ${prize.amount.toLocaleString()}
+                                    ${prize.amount.toLocaleString('en-US')}
                                 </span>
                             </li>
                         );
