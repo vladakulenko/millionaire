@@ -6,16 +6,15 @@ type ResultPageProps = {
     };
 };
 
-const Result = ({ searchParams }: ResultPageProps) => {
-    const amount = searchParams.amount ?? '0';
+export default async function Result({ searchParams }: ResultPageProps) {
+    const params = await searchParams;
+    const amount = params.amount ?? '0';
 
     return (
         <GameIntroScreen
             title={`$${amount} earned`}
-            subTitle='Total score: '
+            subTitle='Total score:'
             variant='result'
         />
     );
-};
-
-export default Result;
+}
